@@ -6,7 +6,7 @@ int main()
     int i = 1;
     cout<<"Enter a Number = ";
     cin>>a;
-    cout<<"Number is = "<<a;
+    cout<<"Number is = "<<a<<"\n";
   for(b=0;b<=a;b++) {
      if (a%i==0)
         cout<<i<<"\n";
