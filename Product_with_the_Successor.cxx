@@ -16,7 +16,7 @@
  	cout<<"Enter Array Size = ";
  	cin>>n;
  	int a[n];          
-          // First array to store integer Numbers
+        // First array to store integer Numbers
  	int b[n];
  	// Second array to store Successor
  	int c[n];
