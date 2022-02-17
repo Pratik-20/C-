@@ -4,7 +4,7 @@
 #include<conio.h>
 void main()
 {
-    int a,b,c,d;
+    int a,b,c;
     cout<<"Enter a Number:-  ";
     cin>>a;
     b= a/2;
