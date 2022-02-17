@@ -4,15 +4,21 @@
 #include<conio.h>
 void main()
 {
-	int n, m =0,flag =0;
-	cout<<"Enter Number :- ";
-	cin>>n;
-	for (int i =2;i<=m;i++){
-	if (n%i==0){
-	cout<<"Non- Prime Number";
-	flag =1;
-	break;}}
-	if(flag==0)
-	cout<<"Prime Number";
-	getch();
+    int a,b,c,d;
+    cout<<"Enter a Number:-  ";
+    cin>>a;
+    b= a/2;
+    c=0;
+    for (int i=2;i<=b;i++)
+    {
+        if (a%i==0)
+        {
+        c=1;
+        cout<<"Number is not prime";
+        break;
+        }
+    }
+    if(c==0)    
+    cout<<"Number is prime";
+    getch();
 }
