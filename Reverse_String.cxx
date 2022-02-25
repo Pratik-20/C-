@@ -1,20 +1,21 @@
-#include<iostream.h>
-#include<conio.h>
-void main()
+// A Simple C++ program to reverse a string
+
+#include <iostream.h>
+#include <conio.h>
+using namespace std;
+
+void reverseStr(string& str)
 {
-	int n;
+	int n = str.length();
+	for (int i = 0; i < n / 2; i++)
+		swap(str[i], str[n - i - 1]);
+}
+
+int main()
+{
 	string str;
-	
-	cout<<"Enter A String = ";
 	cin>>str;
-	
-	n=str.length();
-	cout<<"String Length Is = "<<n<<endl;
-	
-	for (int i =0; i<n/2;i++)
-		swap(str[i],str[n-i-1]);
-		
-	cout<<"Reverse String Is = "<<str<<endl;
-	
-	getch();
+	reverseStr(str);
+	cout << str;
+	return 0;
 }
